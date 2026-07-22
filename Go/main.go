@@ -111,7 +111,7 @@ func deleteMenu(w http.ResponseWriter, r *http.Request) {
 }
 func withCORS(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Access-Control-Allow-Origin", "http://localhost:5173")
+		w.Header().Set("Access-Control-Allow-Origin", "https://psychic-spork-69w946pvx545hrjrj-5173.app.github.dev")
 		w.Header().Set("Access-Control-Allow-Methods",
 			"GET, POST, PUT, PATCH, DELETE, OPTIONS")
 		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")

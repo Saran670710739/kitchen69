@@ -8,7 +8,7 @@
 <h1>หน้าร้านทดลอง</h1>
 <pre id="out">กำลังสั่งอาหาร...</pre>
 <script>
-fetch("http://localhost:8080/menu")
+fetch("https://psychic-spork-69w946pvx545hrjrj-8080.app.github.dev/menu")
   .then(r => r.json())
   .then(data => out.innerText = JSON.stringify(data, null, 2))
   .catch(err => out.innerText = "โดนยามบล็อก " + err);
